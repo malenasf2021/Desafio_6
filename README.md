@@ -86,7 +86,7 @@ tomó siguiendo tanto las sugerencias del IDE NetBeans como criterios de diseño
 Dado que la clase `Personaje` no se instancia directamente, sino que sirve como base para otras, **protected** elimina la 
 necesidad de implementar `getters` o `setters`, lo que facilita la reutilización de código.
 
-Asimismo, se implementó un constructor en la clase `Personaje`, que inicializa los atributos comunes: nombre y nivel. 
+Asimismo, se implementó un constructor en la clase `Personaje`, que inicializa los atributos comunes: `nombre` y `nivel`. 
 La palabra reservada `super()` permite que las subclases `Mago` y `Guerrero` hereden la inicialización evitando redundancias. 
 En la misma clase `Personaje` se define el método abstracto `accionEspecial()` el que será invocado por las subclases `Mago` y 
 `Guerrero` y cada una responderá según su naturaleza concreta.
